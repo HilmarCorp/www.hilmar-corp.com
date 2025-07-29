@@ -3,53 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HilmarCorp AI Trading</title>
+  <title>HilmarCorp – Hedge Fund AI</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>HilmarCorp</h1>
-      <nav>
-        <a href="#features">Plateforme</a>
+      <a href="#" class="brand"><img src="logo.png" alt="HilmarCorp logo"></a>
+      <nav id="nav-links">
+        <a href="#strategy">Stratégie</a>
         <a href="#performance">Performance</a>
-        <a href="#pricing">Tarifs</a>
-        <a class="cta" href="#signup">Ouvrir un compte</a>
+        <a href="#research">Recherche</a>
+        <a href="#contact" class="cta">Contact</a>
       </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <section class="hero" id="hero">
-    <div class="container">
-      <h2>L’IA qui optimise chaque trade.</h2>
-      <p class="subtitle">Analyse temps réel, gestion du risque, transparence totale.</p>
-      <a class="btn-primary" href="#signup">Commencer maintenant</a>
-      <a class="btn-secondary" href="#demo">Voir la démo</a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>IA propriétaire pour générer de l’alpha institutionnel.</h1>
+        <p class="subtitle">8&nbsp;ans d’apprentissage continu&nbsp;• Exécution sub‑30&nbsp;ms&nbsp;• Reporting ESG‑ready.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#contact">Demander une présentation</a>
+          <a class="btn-secondary" href="#research">Fiche stratégie PDF</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="hero.png" alt="Aperçu performance HilmarCorp">
+      </div>
     </div>
   </section>
 
   <section class="stats">
     <div class="container grid-3">
       <div class="stat">
-        <span class="stat-num">74%</span>
+        <span class="stat-num">98&nbsp;%</span>
         <span class="stat-label">Trades clôturés<br>en profit</span>
       </div>
       <div class="stat">
-        <span class="stat-num">+18.3%</span>
-        <span class="stat-label">Rendement<br>annualisé net</span>
+        <span class="stat-num">2.24</span>
+        <span class="stat-label">Sharpe ratio<br>(8&nbsp;ans)</span>
       </div>
       <div class="stat">
-        <span class="stat-num">30&nbsp;ms</span>
-        <span class="stat-label">Latence moyenne<br>d’exécution</span>
+        <span class="stat-num">8&nbsp;ans</span>
+        <span class="stat-label">Track‑record<br>backtest + live</span>
       </div>
     </div>
   </section>
 
-  <!-- TODO: Features, Performance, Pricing sections -->
+  <section id="strategy" class="features">
+    <div class="container grid-3">
+      <div class="feature">
+        <h3>Modèles Multi‑Facteurs</h3>
+        <p>Momentum, value, volatilité, signaux alternatifs.</p>
+      </div>
+      <div class="feature">
+        <h3>Couverture dynamique</h3>
+        <p>Gamma hedging intra‑day, réallocation adaptative.</p>
+      </div>
+      <div class="feature">
+        <h3>Gestion du risque</h3>
+        <p>Stress‑tests extrêmes, limites VaR et stop‑loss IA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="performance" class="performance">
+    <div class="container">
+      <h2>Évolution cumulative vs S&P&nbsp;500</h2>
+      <img src="hero.png" alt="Courbe de performance (placeholder)">
+      <p class="disclaimer">Performances nettes de frais, arrêtées au 31 déc 2024. Les performances passées ne préjugent pas des performances futures.</p>
+    </div>
+  </section>
+
+  <section id="research" class="research">
+    <div class="container">
+      <h2>Publications & white‑papers</h2>
+      <ul class="papers">
+        <li><a href="#">Transformer Alpha on Tick Data (PDF)</a></li>
+        <li><a href="#">Risk Budgeting with RL (PDF)</a></li>
+        <li><a href="#">Liquidity‑Aware Execution <30 ms (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="final-cta">
+    <div class="container">
+      <h2>Institutionnel ? Discutons.</h2>
+      <a href="mailto:invest@hilmarcorp.ai" class="btn-primary btn-large">Écrire à l’équipe</a>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">
-      <p>© 2025 HilmarCorp. Performances passées ne préjugent pas des performances futures.</p>
+    <div class="container footer-grid">
+      <div>
+        <h5>HilmarCorp</h5>
+        <p>© 2025 HilmarCorp. Tous droits réservés.</p>
+      </div>
+      <div>
+        <h5>Documents</h5>
+        <ul>
+          <li><a href="#">Présentation investisseurs</a></li>
+          <li><a href="#">KID</a></li>
+          <li><a href="#">Politique SFDR</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Conformité</h5>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Avertissement risques</a></li>
+          <li><a href="#">RGPD</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
