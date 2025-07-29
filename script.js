@@ -1,4 +1,1 @@
-
-const burger = document.getElementById('burger');
-const nav = document.getElementById('nav-links');
-burger.addEventListener('click', () => nav.classList.toggle('show'));
+const b=document.getElementById('burger');const n=document.getElementById('nav-links');b.addEventListener('click',()=>n.classList.toggle('show'));
