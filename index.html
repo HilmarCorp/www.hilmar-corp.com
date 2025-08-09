@@ -1,118 +1,176 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HilmarCorp – Hedge‑Fund IA</title>
-  <link rel="stylesheet" href="styles.css?v=5">
-  <script defer src="script.js"></script>
-</head>
-<body>
-<header>
-  <div class="container">
-    <a href="#" class="brand"><img src="logo.png" alt="HilmarCorp logo"></a>
-    <nav id="nav-links">
-      <a href="#strategy">Stratégie</a>
-      <a href="#performance">Performance</a>
-      <a href="#research">Recherche</a>
-      <a href="#contact" class="cta">Contact</a>
-    </nav>
-    <button class="burger" id="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<section class="hero" id="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <h1>IA propriétaire, alpha régulier.</h1>
-      <p class="subtitle">Entraînement continu depuis&nbsp;2016 – exécution <30&nbsp;ms – reporting institutionnel.</p>
-      <div class="hero-cta">
-        <a class="btn-primary" href="#contact">Demander une présentation</a>
-        <a class="btn-secondary" href="#research">Fiche stratégie</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HilmarCorp | IA crypto institutionnelle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-white text-neutral-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-neutral-200">
+      <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img src="IMG_3983.jpg" alt="HilmarCorp logo" class="h-9 w-9 rounded-2xl object-contain">
+          <span class="font-semibold tracking-tight">HilmarCorp</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#approche" class="hover:opacity-70">Approche</a>
+          <a href="#recherche" class="hover:opacity-70">Recherche</a>
+          <a href="#conformite" class="hover:opacity-70">Conformité</a>
+          <a href="#contact" class="hover:opacity-70">Contact</a>
+        </nav>
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-neutral-900 px-3 py-2 text-sm hover:bg-neutral-900 hover:text-white transition">Demander une présentation</a>
       </div>
-    </div>
-    <div class="hero-visual">
-      <img src="hero.png" alt="Visualisation dashboard HilmarCorp">
-    </div>
-  </div>
-</section>
+    </header>
 
-<section class="stats">
-  <div class="container grid-3">
-    <div class="stat">
-      <span class="stat-num">98&nbsp;%</span>
-      <span class="stat-label">Trades gagnants</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">2.24</span>
-      <span class="stat-label">Sharpe ratio<br><small>(depuis 2017)</small></span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">8&nbsp;ans</span>
-      <span class="stat-label">Entraînement</span>
-    </div>
-  </div>
-</section>
+    <!-- Hero -->
+    <section class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-20 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-7">
+          <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight">
+            Gestion d’actifs <span class="whitespace-nowrap">crypto</span> pilotée par IA.
+          </h1>
+          <p class="mt-5 text-neutral-600 max-w-2xl">
+            Recherche propriétaire. Discipline du risque. Exécution institutionnelle.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-2xl bg-black text-white px-5 py-3 text-sm hover:opacity-90">Accès institutionnel (sous NDA)</a>
+            <a href="#approche" class="rounded-2xl border border-neutral-300 px-5 py-3 text-sm hover:border-neutral-900">Découvrir notre approche</a>
+          </div>
+          <div class="mt-8 text-xs text-neutral-500 leading-relaxed">
+            <p class="max-w-xl">
+              Avertissement : ce site ne constitue ni une offre au public, ni un conseil en investissement.
+              Aucune performance n’est affichée. Accès restreint aux investisseurs qualifiés. Sous NDA.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="aspect-[4/3] w-full rounded-3xl border border-neutral-200 shadow-sm grid place-items-center">
+            <div class="text-center px-8">
+              <p class="text-sm text-neutral-500">Tableau de bord IA — aperçu</p>
+              <p class="mt-2 text-xs text-neutral-500">(visualisation non contractuelle, données masquées)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Approche -->
+    <section id="approche" class="border-t border-neutral-200 bg-neutral-50/60">
+      <div class="mx-auto max-w-7xl px-6 py-16">
+        <h2 class="text-2xl font-semibold tracking-tight">Notre approche</h2>
+        <p class="mt-3 text-neutral-600 max-w-3xl">
+          Architecture IA propriétaire combinant encodeurs temporels (Transformer), experts spécialisés (Mixture-of-Experts)
+          et agent de décision par renforcement (SAC). Objectif : profil rendement/risque robuste à travers les cycles.
+        </p>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <div class="rounded-3xl bg-white border border-neutral-200 p-6 shadow-sm">
+            <h3 class="font-medium">Recherche propriétaire</h3>
+            <p class="mt-2 text-sm text-neutral-600">Backtests hors-échantillon, validations en fenêtres roulantes, stress tests. Publication de travaux quand pertinent.</p>
+          </div>
+          <div class="rounded-3xl bg-white border border-neutral-200 p-6 shadow-sm">
+            <h3 class="font-medium">Exécution & infrastructure</h3>
+            <p class="mt-2 text-sm text-neutral-600">Pipelines temps réel, latence maîtrisée, journaux détaillés pour audit et conformité.</p>
+          </div>
+          <div class="rounded-3xl bg-white border border-neutral-200 p-6 shadow-sm">
+            <h3 class="font-medium">Contrôle du risque</h3>
+            <p class="mt-2 text-sm text-neutral-600">Budget de risque, limites d’exposition, gestion du drawdown et des coûts de transaction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="strategy" class="features alt-bg">
-  <div class="container">
-    <h2 class="section-title">Notre cœur d’alpha</h2>
-    <p class="section-subtitle">Données techniques (RSI, MACD, bandes de Bollinger), données macro-économiques, données on-chain, données de sentiment, probabilités modélisées par IA.</p>
-  </div>
-</section>
+    <!-- Recherche -->
+    <section id="recherche">
+      <div class="mx-auto max-w-7xl px-6 py-16">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">Recherche</h2>
+            <p class="mt-3 text-neutral-600 max-w-3xl">
+              Notes techniques, expériences et publications sélectionnées. Accès complet réservé aux partenaires sous NDA.
+            </p>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex rounded-xl border border-neutral-900 px-3 py-2 text-sm hover:bg-neutral-900 hover:text-white">Demander l’accès</a>
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <article class="rounded-3xl border border-neutral-200 p-6 hover:shadow-sm transition">
+            <h3 class="font-medium">Encodeur temporel pour séries financières</h3>
+            <p class="mt-2 text-sm text-neutral-600">Synthèse de 30 jours de features multi-sources en vecteur de contexte exploitable par l’agent RL.</p>
+            <div class="mt-4 text-sm">
+              <span class="rounded-lg border px-2 py-1">Note technique</span>
+            </div>
+          </article>
+          <article class="rounded-3xl border border-neutral-200 p-6 hover:shadow-sm transition">
+            <h3 class="font-medium">Mixture-of-Experts pour régimes de marché</h3>
+            <p class="mt-2 text-sm text-neutral-600">Pondération dynamique d’experts spécialisés selon le contexte latent.</p>
+            <div class="mt-4 text-sm">
+              <span class="rounded-lg border px-2 py-1">Note technique</span>
+            </div>
+          </article>
+          <article class="rounded-3xl border border-neutral-200 p-6 hover:shadow-sm transition">
+            <h3 class="font-medium">SAC récurrent & contrôle du drawdown</h3>
+            <p class="mt-2 text-sm text-neutral-600">Politique stochastique avec mémoire courte et pénalités de risque explicites.</p>
+            <div class="mt-4 text-sm">
+              <span class="rounded-lg border px-2 py-1">Note technique</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Conformité -->
+    <section id="conformite" class="border-t border-neutral-200 bg-neutral-50/60">
+      <div class="mx-auto max-w-7xl px-6 py-16">
+        <h2 class="text-2xl font-semibold tracking-tight">Conformité & risques</h2>
+        <ul class="mt-4 space-y-2 text-sm text-neutral-700 max-w-3xl list-disc list-inside">
+          <li>Pas d’offre au public. Accès réservé aux investisseurs qualifiés et partenaires sous NDA.</li>
+          <li>HilmarCorp n’est pas une SGP agréée à ce jour. Aucune collecte de fonds. Aucun conseil personnalisé.</li>
+          <li>Les performances passées ne préjugent pas des performances futures. Les actifs crypto présentent un risque élevé de perte en capital.</li>
+          <li>RGPD : données minimales collectées (formulaire de contact). Voir notre politique de confidentialité.</li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact">
+      <div class="mx-auto max-w-7xl px-6 py-16">
+        <div class="grid lg:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">Contact institutionnel</h2>
+            <p class="mt-3 text-neutral-600 max-w-xl">Explorons un partenariat sous NDA (incubateur, data providers, exchanges, institutions).</p>
+            <div class="mt-6 space-y-3 text-sm">
+              <p><span class="font-medium">E‑mail :</span> contact@hilmarcorp.com</p>
+              <p><span class="font-medium">Localisation :</span> Paris & Lisbonne</p>
+            </div>
+            <div class="mt-8 text-xs text-neutral-500">
+              <p>En soumettant une demande, vous acceptez de ne pas solliciter d’informations confidentielles sans NDA signé.</p>
+            </div>
+          </div>
+          <form class="rounded-3xl border border-neutral-200 p-6 bg-white shadow-sm">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="text-sm">Nom<input type="text" class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="Votre nom" /></label>
+              <label class="text-sm">Société<input type="text" class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="Organisation" /></label>
+            </div>
+            <label class="block mt-4 text-sm">E‑mail professionnel<input type="email" class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="prenom.nom@entreprise.com" /></label>
+            <label class="block mt-4 text-sm">Message<textarea class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 h-28 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="Objet de la demande"></textarea></label>
+            <button type="button" class="mt-5 w-full rounded-2xl bg-black text-white px-5 py-3 text-sm hover:opacity-90">Envoyer la demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<section id="performance" class="performance">
-  <div class="container">
-    
-    <img class="chart" src="hero.png" alt="Courbe de performance (à remplacer par votre graphique)">
-    <p class="disclaimer">Performances nettes de frais, arrêtées au 9 septembre 2025. Les performances passées ne préjugent pas des performances futures.</p>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col sm:flex-row gap-6 items-center justify-between text-sm text-neutral-600">
+        <p>© <script>document.write(new Date().getFullYear())</script> HilmarCorp. Tous droits réservés.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="hover:opacity-70">Mentions légales</a>
+          <a href="#" class="hover:opacity-70">Avertissement risques</a>
+          <a href="#" class="hover:opacity-70">Politique de confidentialité</a>
+        </div>
+      </div>
+    </footer>
 
-<section id="research" class="research alt-bg">
-  <div class="container">
-    <h2 class="section-title">Publications</h2>
-    <ul class="papers">
-      <li><a href="#">Transformer Alpha on Tick Data (PDF)</a></li>
-      <li><a href="#">Risk Budgeting with RL (PDF)</a></li>
-      <li><a href="#">Liquidity‑Aware Execution &lt;30 ms (PDF)</a></li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact" class="final-cta">
-  <div class="container">
-    <h2>Institutionnel&nbsp;? Parlons‑en.</h2>
-    <a href="mailto:invest@hilmarcorp.ai" class="btn-primary btn-large">Contacter l’équipe</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <img class="footer-logo" src="logo.png" alt="HilmarCorp logo">
-      <p>© 2025 HilmarCorp. Tous droits réservés.</p>
-    </div>
-    <div>
-      <h5>Documents</h5>
-      <ul>
-        <li><a href="#">Présentation investisseurs</a></li>
-        <li><a href="#">KID</a></li>
-        <li><a href="#">Politique SFDR</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Conformité</h5>
-      <ul>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Avertissement risques</a></li>
-        <li><a href="#">RGPD</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-</body>
+  </body>
 </html>
