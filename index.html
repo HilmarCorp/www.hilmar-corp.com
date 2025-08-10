@@ -12,43 +12,27 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
 </head>
-<body class="min-h-screen bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
+<body class="min-h-screen bg-white text-neutral-900">
   <!-- En‑tête -->
-  <header class="sticky top-0 z-30 bg-blue-900 text-white dark:bg-blue-800 dark:text-neutral-100">
+  <header class="sticky top-0 z-30 bg-blue-900 text-white">
     <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
       <!-- Logo et nom -->
       <div class="flex items-center gap-3">
         <img src="IMG_3983.jpg" alt="Logo HilmarCorp" class="h-9 w-9 object-contain" />
         <span class="font-semibold tracking-tight">HilmarCorp</span>
       </div>
-      <!-- Bouton menu pour petit écran -->
-      <button id="menu-button" class="md:hidden p-2 rounded focus:outline-none" aria-label="Menu">
-        <!-- simple burger icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
       <!-- Navigation principale -->
-      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row items-start md:items-center gap-6 text-sm absolute md:static top-full left-0 w-full md:w-auto bg-blue-900 md:bg-transparent px-6 md:px-0 py-4 md:py-0 z-20">
-        <a href="#ambition" class="block md:inline hover:text-blue-200 transition">Ambition</a>
-        <a href="#approche" class="block md:inline hover:text-blue-200 transition">Méthodologie</a>
-        <a href="#conformite" class="block md:inline hover:text-blue-200 transition">Responsabilité</a>
-        <a href="vision.html" class="block md:inline hover:text-blue-200 transition">Vision</a>
-        <a href="rd.html" class="block md:inline hover:text-blue-200 transition">R&amp;D</a>
-        <a href="faq.html" class="block md:inline hover:text-blue-200 transition">FAQ</a>
-        <a href="blog.html" class="block md:inline hover:text-blue-200 transition">Blog</a>
-        <a href="#contact" class="block md:inline hover:text-blue-200 transition">Contact</a>
-        <!-- Zone de langue et thème, visible dans menu sur mobile -->
-        <div class="flex items-center gap-2 mt-4 md:mt-0">
-          <span class="border border-white rounded-xl px-3 py-1 bg-blue-900 md:bg-transparent">FR</span>
-          <a href="index_en.html" class="border border-white rounded-xl px-3 py-1 hover:bg-white hover:text-blue-900 transition">EN</a>
-          <button id="theme-toggle" class="border border-white rounded-xl px-3 py-1 hover:bg-white hover:text-blue-900 transition flex items-center gap-1" aria-label="Mode sombre">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8-9h1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l-.707-.707M17 12a5 5 0 11-10 0 5 5 0 0110 0z"/>
-            </svg>
-          </button>
-        </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#ambition" class="hover:text-blue-300 transition">Ambition</a>
+        <a href="#approche" class="hover:text-blue-300 transition">Méthodologie</a>
+        <a href="#conformite" class="hover:text-blue-300 transition">Responsabilité</a>
+        <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
       </nav>
+      <!-- Sélecteur de langue -->
+      <div class="flex items-center gap-2">
+        <span class="border border-white rounded-xl px-3 py-1">FR</span>
+        <a href="index_en.html" class="border border-white rounded-xl px-3 py-1 hover:bg-white hover:text-blue-900 transition">EN</a>
+      </div>
     </div>
   </header>
 
@@ -188,28 +172,6 @@
     </div>
   </section>
 
-  <!-- Newsletter / One‑pager -->
-  <section id="newsletter" class="border-t border-neutral-200 bg-neutral-50/60 dark:bg-neutral-800/40 py-16">
-    <div class="mx-auto max-w-7xl px-6 text-center">
-      <h2 class="text-2xl font-semibold tracking-tight text-blue-900 dark:text-blue-200">Newsletter &amp; One‑pager</h2>
-      <p class="mt-3 text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-        Abonnez‑vous pour recevoir nos actualités et obtenir en exclusivité notre dossier de présentation détaillé. Nous respectons votre confidentialité et nous n’envoyons que du contenu pertinent.
-      </p>
-      <form action="https://formsubmit.co/contact@hilmar-corp.com" method="POST" class="mt-8 max-w-xl mx-auto">
-        <!-- Configuration pour l’envoi et la redirection -->
-        <input type="hidden" name="_next" value="https://www.hilmar-corp.com/newsletter_merci.html" />
-        <input type="hidden" name="_subject" value="Nouvelle inscription à la newsletter" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <input type="email" name="email" class="flex-1 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900" placeholder="Votre adresse e‑mail" required />
-          <input type="text" name="prenom" class="flex-1 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900" placeholder="Prénom (optionnel)" />
-          <button type="submit" class="rounded-xl bg-blue-900 text-white px-5 py-3 flex-shrink-0 hover:bg-blue-800 transition">S’inscrire</button>
-        </div>
-        <p class="mt-3 text-xs text-neutral-500 dark:text-neutral-400">En vous inscrivant, vous recevrez notre one‑pager PDF en avant‑première.</p>
-      </form>
-    </div>
-  </section>
 
   <!-- Contact & partenariats -->
   <section id="contact" class="border-t border-neutral-200 bg-neutral-50/60 py-16">
@@ -264,28 +226,5 @@
       </div>
     </div>
   </footer>
-  <!-- Scripts pour le menu et le mode sombre -->
-  <script>
-    // menu toggle for mobile
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuButton = document.getElementById('menu-button');
-      const navMenu = document.getElementById('nav-menu');
-      if (menuButton) {
-        menuButton.addEventListener('click', function() {
-          if (navMenu.classList.contains('hidden')) {
-            navMenu.classList.remove('hidden');
-          } else {
-            navMenu.classList.add('hidden');
-          }
-        });
-      }
-      const themeToggle = document.getElementById('theme-toggle');
-      if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-          document.documentElement.classList.toggle('dark');
-        });
-      }
-    });
-  </script>
 </body>
 </html>
