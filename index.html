@@ -25,12 +25,10 @@
           <a href="#conformite" class="hover:text-blue-300 transition">Responsabilité</a>
           <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
         </nav>
-        <!-- Zone action et langue : séparée pour un meilleur placement -->
-        <div class="hidden md:flex items-center gap-4">
-          <!-- Lien vers la version anglaise du site -->
-          <a href="index_en.html" class="text-sm hover:text-blue-300 transition">EN</a>
-          <!-- Bouton d'appel à l'action pour collaboration -->
-          <a href="#contact" class="inline-flex items-center rounded-xl border border-white px-3 py-2 text-sm hover:bg-white hover:text-blue-900 transition">Collaborer</a>
+        <!-- Sélecteur de langue : FR actif, EN lien -->
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <span class="border border-white rounded-xl px-3 py-1 bg-white text-blue-900">FR</span>
+          <a href="index_en.html" class="border border-white rounded-xl px-3 py-1 hover:bg-white hover:text-blue-900 transition">EN</a>
         </div>
       </div>
     </header>
@@ -178,6 +176,17 @@
       </div>
     </section>
 
+    <!-- Section de collaboration : invite les partenaires potentiels à prendre contact -->
+    <section id="collaboration" class="border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-6 py-16 text-center">
+        <h2 class="text-2xl font-semibold tracking-tight">Collaborations &amp; projets</h2>
+        <p class="mt-3 text-neutral-600 max-w-2xl mx-auto">
+          Nous recherchons des partenaires académiques et industriels pour co‑développer des modèles et des stratégies. Si notre ambition résonne avec la vôtre, contactez‑nous.
+        </p>
+        <a href="#contact" class="mt-8 inline-block rounded-2xl bg-blue-900 text-white px-5 py-3 text-sm hover:bg-blue-800 transition">Prendre contact</a>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <div class="mx-auto max-w-7xl px-6 py-16">
@@ -200,7 +209,7 @@
             </div>
             <label class="block mt-4 text-sm">E‑mail professionnel<input type="email" class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="prenom.nom@organisation.com" /></label>
             <label class="block mt-4 text-sm">Message<textarea class="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 h-28 focus:outline-none focus:ring-2 focus:ring-neutral-900" placeholder="Objet de la demande"></textarea></label>
-            <button type="button" class="mt-5 w-full rounded-2xl bg-black text-white px-5 py-3 text-sm hover:opacity-90">Envoyer la demande</button>
+            <button type="button" class="mt-5 w-full rounded-2xl bg-blue-900 text-white px-5 py-3 text-sm hover:bg-blue-800">Envoyer la demande</button>
           </form>
         </div>
       </div>
