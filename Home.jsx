@@ -159,9 +159,33 @@ export default function Home() {
             </form>
           </div>
         </div>
+   
+  </section>
+    {/* Insights */}
+      
+      <section id="insights" className="border-t border-neutral-50/60">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <h2 className="text-2xl font-semibold tracking-tight">Insights</h2>
+          <p className="mt-3 text-neutral-600 max-w-3xl">
+            Nos dernières actualités et analyses sur l'IA et les marchés financiers.
+          </p>
+          <div className="mt-10 grid md:grid-cols-3 gap-6">
+            <article className="border border-neutral-200 p-6 rounded-lg hover:shadow-sm transition">
+              <h3 className="font-medium">Subvention Bpifrance</h3>
+              <p className="mt-2 text-sm text-neutral-600">
+                Nous avons déposé un dossier auprès de Bpifrance pour financer l'entraînement de notre IA. Découvrez nos objectifs et l'impact attendu.
+              </p>
+              <a href="/bpi.html" className="mt-4 inline-block font-semibold text-sm hover:underline text-blue-600">
+                Lire la suite →
+              </a>
+            </article>
+          </div>
+        </div>
       </section>
+   </section>
 
-      {/* Footer */}
+  
+  {/* Footer */}
       <footer className="border-t border-neutral-200">
         <div className="mx-auto max-w-7xl px-6 py-10 flex flex-col sm:flex-row gap-6 items-center justify-between text-sm text-neutral-600">
           <p>© {new Date().getFullYear()} HilmarCorp. Tous droits réservés.</p>
