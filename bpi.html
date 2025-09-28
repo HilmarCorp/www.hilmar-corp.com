@@ -2,51 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Hilmar Corp - Subvention BPI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{ font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color:#333; }
-    header{ background-color:#000; color:#fff; padding:20px; }
-    nav{ display: flex; gap:20px; align-items:center; position: relative; }
-    nav a{ color:#fff; text-decoration:none; }
-    .dropdown:hover .dropdown-content{ display:block; }
-    .dropdown-content{ display:none; position:absolute; background-color:#fff; color:#333; padding:20px; border:1px solid #eee; min-width:200px; right:0; top:100%; }
-    .dropdown-content a{ color:#333; text-decoration:none; display:block; }
-    .dropdown-content img{ max-width:150px; display:block; margin-bottom:10px; }
-    .hero{ padding:60px 20px; text-align:center; background-color:#f5f5f5; }
-    .content{ padding:40px 20px; max-width:800px; margin:auto; }
-    footer{ background-color:#000; color:#fff; text-align:center; padding:20px; }
-  </style>
+  <title>Hilmar Corp - Subvention Bpifrance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Accueil</a>
-      <a href="#approche">Approche</a>
-      <a href="#recherche">Recherche</a>
-      <a href="#conformite">Conformité</a>
-      <a href="#contact">Contact</a>
-      <div class="dropdown">
-        <a href="#">Insights</a>
-        <div class="dropdown-content">
-          <a href="/bpi.html">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABhASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0nvRR3or8bZ9CFFFFAwooooAKKKKACiiigAoorD8ReKLLw7GgmVpriQZSFDg49SewrWhQqV5qnSV2yZSUVdm5RXGaP8RLLULxLa7tWtDIdqSb9y57A8DFdnWmKwdfCy5K0bMUKkZq8WFFFFcxYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB3oo70UMRj+J9Un0bQJ762CGWMqAHGRywFcB/wsnW/wDnjZf9+2/+KrsvHv8AyJ93/vR/+hCvHe1fZ8PYDDYjCudWCb5nv6I4cTUnGdkz3zS7l73SbO6lCiSaFJGCjjJGeKt1neHwf+Ec0zj/AJdY/wD0EVo18jXSjVkltd/mdsXeKCiijB9KyKCijB9KKQBXkvxEgnj8UGaQHypYU8o9sAYI/P8AnXrVVdQ0yz1W28i9tknjzkBhyD6g9RXp5Tj1gcR7WSurWZlWp+0jZHgkUUk8qRRKWkdgqKOpJ6V9A26OltEkh3SKihj6nHNZmmeF9H0ifz7OyCzdpHYsV+melHii9fT/AAzf3ETFZBHtUjsWIXP6135rmMc0rU6VFWV7a93Yyo0nRi5SMXXPiDZabcPbWUJvJkOGbdtRT6Z71zx+JOtSviGztB6KEZj/ADriq9p8Habb2PhuyeKJRLPEJZJMcsTz1r1cbg8BlWHjKVLnk9NX/X5GNOdStK17D/CuqXmsaN9qvolim81l2qhUYGMcGtuimu6RrukdUX1Y4FfHVpxqVHKEbJ9Ox3RVlZsdRUMN3bXDFYLiGVhyQjhiPyp8ksUIzLIiD1ZgKzcZJ2tqO6H0VWXULJ22reW5PoJV/wAas9RkdKJRlHdBdMKKKMH0pDCijB9KMUgCiiimAUUhIUEkgAdSagF/Zs+wXduW/uiVc/zpqMnshXRYooopDCikYhVLMQAOpJwKgW/s3fYt3bs3oJVJ/nTUZPVIV0WKKKKQwooooAO9FHeihiOa8e/8ifd/70f/AKEK8dr2Lx7/AMifd/70f/oQrx3tX33C/wDub/xP8kedi/4nyOmm8O6/Z6JDqkVy8lsYlk2wzNujUjPT29qi0nxprOlyqWuXuoM/NFO27I9j1Fep6CiyeGdORwCrWiKQe4KivELqLyLueEdI5GT8jinluIhmLq0cRBPlfbpr+Om4VYulaUXue76XqVvq2nQ3tsSY5RnB6qe4PuK8X1e9u11q/VbqcAXEgAEjcfMfeu3+GFwzWF/bE/LHKrqPTcCD/wCg1wOsf8hzUP8Ar5k/9CNYZNhI4bH16O6Vrej1KrzcqcZGnoWkax4hW5Nnfspg25Ek7DOc4x+VVf7T13Q794TeXUE8TYdGkLDP0OQRXXfC7/mKf9sv/ZqofEy2WPXLW4UYM0GG9ypx/IiuqOM58zngqkU42008k/8AMhwtSVRPU6zwh4qHiC3eG4VUvoRlwvR1/vD+orC+Jk80NxpvlTSR5STOxyM8r6Vy/g+7az8V2DKcCSTym9w3H88V0nxQ/wCPnTP9yT+a1wRwFPC5zBQXuyTdu2jNHUc6Dvujl9AvLpvEWmq11OVNzGCDISD8w969N8c/8ifff8A/9DFeWeH/APkY9M/6+o//AEIV6p45/wCRPvv+Af8AoYqs5ilmWGsuq/8ASkKh/CmeM111j4O8R3dhBcW92iwyxh0BuWGARxxjiuRr3Tw5/wAi1pn/AF7R/wAq789x9XB0oSppavqr9DPD01NtMwtd8QTeFfD1hZjbJqbwqmSdwXAALH156V5rLcahrd8iyzTXVxKwVAzZyT2A6Cuj+JJJ8TRgngWyY/Nqo+BlDeMLHIzjeR9dhqMupU8NgHi1FObTk3+NvQdVudTk6bHceDvCVz4emmubq4id5owhjjB+XnPXvWPP8PL/AFHULm5utQiiSSV2RcGRgpJI9AK9EZgqlmICgZJJwAK43VPiPp1pK0VlA94y8Fw2xPwPU/lXzmExuZYivOrh1eUrXdlpbbfRHVOnSjFKWxy2v+A7vRbJr2K4S6gT/WYTayj1xzkVmaJ4l1HQ7hWgmZ4M/PA7ZRh/Q+4rcvviFe6lY3NmNNgEc0bIxDMxUEda4uvrsFSxNag6eYRTfy2+RxVHGMr0z6AsbyLULKC8gOYpkDrn37V4jqt3dLrN8FuZwBcSYAkI/iPvXqfgRi3hCyyehcD/AL7NeT6x/wAhu/8A+vmT/wBCNeNkFCNLGYiluo6fc2b4mTcIs0dE0nW9fWc2N2/7jG4SXDL1zjH5VFcXev6DfNbTXl5bzpyV84kEdj1wRXWfC77mqfWP/wBmqt8T41Go6fKB8zQspPsDx/M12xxrlmksFOCcemnlczdO1JVE9TS8G+NJ9UuhpupbTOwJimUY346gj1x3rqtZ1WHRdKmvpxkRjCoDy7HoK8b8NuU8TaYwOD9pQfmcV2nxQuGW2061B+V3eQj1wAB/M15mPymi8zpUoK0Z6tel729TanWl7Jt7o4vVNc1PXrvNzM772wkCHCLnoAK2dZ8B3Oj6J/aBuUlePBmiCY2Z9D3wax/DUay+J9MRuQbhD+RzXs2rWZ1HSLuzUqGniZAW6AkcE135pmEsvrUaNG0YbvTpe3+ZnRp+1jKUtzybw34tvdEuo0lleawJxJExztHqvofavU9Y1q30jRpNRciRNo8oA/6wn7oFcB/wrLVP+f6z/wDHv8KXxulxp+h6FpM8qu8UbF2XOGK4A6+xrlxlDAZhjKXsJJtv3rdUlf8AS3zKhKpSg+ZHN6nrWp69dg3M7yF2wkKnCLnoAK2dc8CT6Loo1D7SkzJjzowmNmeMg9+a5uxuvsV/b3XliTyZFk2E4DYOcV1Oq/EKbVdLubF9PhRZ02lhKSR79K9rEQxdKpShg4pU18W23/DdjCLg03N6lDw54uvdEuUSWV57EnDxOc7R6r6H2r2OORJokljYMjqGVh3B6GvnnI9RXtng6VpfCOmsxyRGVz7BiB/KvD4nwVOEY4iCs27Pz6/odGEqNtxZuUUUV8edwd6KO9FDEc149/5E+7/3o/8A0IV472r2Lx7/AMifd/70f/oQrxzI9a++4X/3N/4n+SPOxf8AE+R7v4fIHhzTSeALWMn/AL5FeH3konvriUdJJWYfiSa6qfx5L/wjkWlWdt5TrAsLzs+TgDB2jtmuc0vSL3WLpbeygaQk8tj5UHqT2qsowU8E61fEe6m+/TXX8RVqiqcsYnffC+3ZbHULgj5XlRB+AJP/AKFXA6x/yHNQ/wCvmT/0I17XomlRaLpUFjEdwjGWfH3mPU14prH/ACHNQ/6+ZP8A0I1jk2JWJx+IrR2drei0Krw5KcYs7f4Xf8xT/tl/7NVT4nSq2q2MQPzJAWP4t/8AWrJ8K+KU8NJebrVp2n27cPtAxnrx71lanqV1ruqyXcw3zSkBUjBOB2AFdFPL6v8Aa08XJWglp56Jf5kuovYqC3J/DMTTeJ9MRRk/aFb8Acn+VdX8Uf8Aj50z/ck/mtXPAvhSfT5TquoRmOYqVhibqoPVj6HtiqXxR/4+dM/3JP5rXNLGU8RnVONN3UU1fzsyuRxoO/U5Lw//AMjHpn/X1H/6EK9U8c/8ifff8A/9DFeV+HiP+Ek0z/r5j/8AQhXqfjn/AJE++/4B/wChiozr/kZYb1X/AKUOh/CmeNV7p4c/5FrTP+vaP+VeFZHrXunhv/kWdM/69k/lVcVfwKfr+gYP4med/Ej/AJGdP+vZP5tVPwJ/yOFl9H/9ANXPiQf+KnT/AK9k/m1UvAh/4rCy+j/+gGuyl/yJf+3H+TM3/H+Z3HxEvZLXw2IomK/aZRGxH93BJH6CvJQMnA717R4w0WXW9BeC3ANxE4ljX+8RnI/EE141NFJbytFNG8UinDK4wR+FY8M1KbwjhH4k3f8AQrFp893sexz6Va6P4Lvba2iVcWb73A5dtvJJ714z2rtm+IbT6DLp91ZbpngMPnJJgHIxkjFcRketb5LhcTh1V+sbt3ve9ya84ytynsvgP/kULL/ef/0M15RrH/Ibv/8Ar5k/9CNer+Av+RQsv95//QzXk+sEf23f8/8ALzJ/6Ea48m/5GOK9f1Zdf+FA7n4Xfc1T6x/+zVB8UP8Aj703/rnJ/MVN8Lvuap9Y/wD2aofij/x96b/1zk/mKwj/AMlC/wCvsFP/AHb+u5yfh7/kZNM/6+o//QhXcfE+1Z7KwuwMrHI0be24Aj/0GuH8PEf8JJpn/X1H/wChCvadV02DV9Mnsbj7kq43Dqp7EfQ1tnOKWFzChWeyTv6PRioQ56UoniOkXS2Ws2V05wsU6Mx9s8/pXvQIIyDkHkEV4TrOiXuh3bQXkRAz8koHySD1B/pXQ6D8QLrS7RLS8t/tcMY2o4ba6j096vO8vnmEIV8K1K34ryFh6qpNxmeq15/8T7Vmg067A+VGeJj6ZwR/I0XPxQhER+zaZIXxwZZAAPyrq7yxi8ReHFguQF+0wo+V/gYgEEfQ18/hqGIyvEU8RiI2V7dO2u3qdM5RrRcYs8Z0m4jtNYsriUAxRzKzgjI255/SvdBZ2ZAItbcg8giNf8K8O1fRr3RLtre9hK8/LIB8rj1Bro9A+IFzpdolpeW/2qGMYRw2HUenuK+izrA1MdCFfCu9uz3XkctCoqbcZnp32K0/59YP+/a/4VKiJGgRFVVHQKMAVwF18UIhGfsumOXxwZZAAPyrvLWUz2kEzABpI1cgdMkZr5DF4HFYaKliFZPbU7YVITfuktFFFcJqHeijvRQxEc0ENzEYp4kljPVHUMD+Bqr/AGNpX/QNs/8Avwv+FXqKuNWcVaLaBpPco/2NpWc/2bZ5/wCuC/4VcjijhQJFGkaDoqKAP0p1FEqk5aSbYJJbAOteC6x/yHNQ/wCvmT/0I170OteOap4X12bVr2WPS7ho3ndlYAYILHB619LwxWp0qlR1JJaLd2OTFxbSsjY+G9laXn9pfaraGfb5e3zEDY+90zXokFla2pzb2sMJ/wCmcYX+Vcf8PdJ1DS/7Q+3Wklv5nl7N4+9jdn+ddvXBnlfnxs+SV46bPTZGuHjamroKgnsLW9ZftFpDcMvC+ZGGI+manrodDt0W18/ALsSM+grnyrBTxmIVOEuXq35Dr1VThzNXOUGiWFtIrjS7eJ1OVbyApB9RxU80MVxE0U8SSxt1R1BB/A12s8KXETRyKCpH5VxzrtdlznBxXXnOWVMBOEudyT2fVWM8PXVVNWsUP7G0r/oG2f8A34X/AAq5HGkUaxxoqIowqqMAD0Ap1FeNKpOekm2dKSWxWn06yupPMuLO3mfGN0kQY49MkUkOmWFvKJYLG2ikHR0iUEfiBVqij2tS3LzO3qFkRzzw20LSzypFGvV3YKB+JqosukatG0gayvEj+83yuF+vpXP/ABFtLi58PRvArOkEweVV/u4Iz+Gaz/Dlhprx6nq2lXW2GS0aN7Iqd0R255JPPIOD716lDA03hPrPO1K9tFottH2v06GMqj5+Wx00UXhq4lWKGPSZJG+6iCMk/QCgx+GRKYimkiQHaVIjyD6YrhvAD6F9stY54ZTq/msYnGdoXb9cevasLUDY/atbWdHN410fsxHQfOd2fwxXqxyhyxE6PtJ+6l87u11rt5+pi6/uqVkeyxS2FtItjC9tFJjK26FVPrkKPzqo0Hh+Rp3aLTGaM5mYqhKnP8Xpz61x0sMmm+J/CdzORve1SKRs55AI69+GFVNLj83wX4pvyObiTGfoc/8As1ckcrSiqkaj15de7cnF/lcv23S39WPQoX0iwtxPC1jbQzHAkQoivj3HB704pperAOVs73y+Aflk25/PFeca1j/hW2g56eaf/Zqu+BktpPF1/NpaumniDAV25529s56g0VMq5aFTEe0d4uX/AJK7b33YKteSjbex2r2mi2U0Re30+CVm/dFkRWJ/2ffp0q7FcwTSyRxTxySRnEio4JQ+47Vxfj3/AJDPh3/r4/8AZkratdNGiTa9qz7FNwzShVJICqCcnPckk1xVMLF4eFWc25STsvPmtb7tTRTfM4paL/I0zc6bqCyW5ntLkKCXj3q+AOpIrGfw94Rnha7+z2XkqcNIk2EB9Mg4HWuL8Eg23iOwaT7uoW8qnPflv/iaqmQ2nhDV9MP3l1FEx+B/+Ir145TOjVdKjWkvh203bT69LGDrKSvKJ6DHpHhKw8uTyNOTeu5GlcNuHqNx5FbH9oWEVsk32y2S3b5UfzFCnHYHpXnfi6CzstV8PwXyM1pDaqkyr1Kg4OKf4oGnS+DdIGkoyWb3TeWr5yM7gevvmsHlv1j2Mp1JPnb1eqW/W++hXteW9ktD0C4m0+dIoLmS1kS4GY45GUiT6A9fwrIbwx4VuLt4Psdp9oUZaJJCGH1UHjrXF29w0174Thk/1trcPbuD2KyDH6Yrd0z/AJKtqv8A1w/olS8BUwqlyVWrRlLTTaVvx3H7RTtddTWtNL8IQzBbeLTGlzgAyK5z+JNdEAFAAAAHAArwciyexuItjHUWuh5TZwoTnIPbrivc7RXSzgSU5kWNQxznnAzWWdYGWG5ZSqOV7/F5W1Wu2o6FRSukrE1FFFeEdId6KO9FDEFFFFAwooooAKKKKACiiigArR03U/sYMciloic8dQazqK6MLiquFqqrSdmiJ04zjyyN261yPyiturFyMbmGAKwqKK2x2Y18dJSrPbZdCaVGNJWiFFFFcJqFFFFAHPeMLzV7DSorjSVZmWXEwWMOdmD2we9cv4bhmuda1q+ttPmtLKW0cCNlIG4gcD15yePWvSaK9PD5kqOHdFQV318rp6rr5djGVLmlzXPPPAl9PYCDS59FuQ0krN9qeMqEBHfI9vXvWc2m3TWPivNjMXedDFmI5b96cleOePSvVM0Zro/tq1aVWNOzlZvV7p3/AB2J9h7qTex51r9jeHwf4duILeZrm1CgoEJZcr3HXqoq3Z6dPb/Cu4g8iT7RKjuY9h3ZL8cdegFd1RWbzebpxp8u0ub8W7fiP2Cu3fpY8z1exu3+HuhwpaztKkpLRiMll+91HatbS7OaD4lXsotpI7drbAcRkITtTv09a7aiiWbylTlT5fi5uv8AM0/wsCoJNO/b8Dh/H8Vwb7RriC1muBBIzssSFuhU9unSrupavc6t4I1C4TTrm3mfMKwMpLnJAzjHTBP5V1dFZRzCKpUoOF3Td07vve1huk7t33PKLXR9W0q78O30gmmjLAiJYmzbruBIP/fRP50/VNGvH8cy2yW0xs572OVnEZ2Y6k56fxGvVKK7f7fq8/O4K9mvvd1934kfVla1zg/GguIfFWk30djNdxQJuZY4ywOGPGcGmeKZbjWfDmlXEGm3EDfayTB5ZLIBkZIA4rv6K5qWaezVL3NafW71WvT5lOje+u55le6Td23xHhaO3ma0a7ScOsZKruwW56dRW1p1tcL8TtTnaCUQtBhZCh2k4ToeldnRTqZvOpDlcfscn5a/gCoJO9+tzyFdLuz4P1NTYT+cb5CoMJ3FcHJHGcV6ppoYaVZhwQwgQEHrnaKtZorLH5lLGK0o21b+9JfoOnSUHuFFFFeabB3ooooYgooooGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z" alt="Bpifrance logo" />
-            <span>Subvention BPI</span>
-          </a>
-        </div>
-      </div>
-    </nav>
+<body class="text-neutral-800">
+  <!-- Header -->
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <nav class="flex gap-8 items-center text-sm">
+        <a href="/" class="hover:opacity-70">Accueil</a>
+        <a href="#approche" class="hover:opacity-70">Approche</a>
+        <a href="#recherche" class="hover:opacity-70">Recherche</a>
+        <a href="#conformite" class="hover:opacity-70">Conformité</a>
+        <a href="#contact" class="hover:opacity-70">Contact</a>
+        <a href="/#insights" class="hover:opacity-70">Insights</a>
+      </nav>
+    </div>
   </header>
-  <div class="hero">
-    <h1>Subvention BPI</h1>
-  </div>
-  <div class="content">
-    <h2>Notre dépôt de dossier auprès de Bpifrance</h2>
-    <p>Hilmar Corp a récemment déposé un dossier auprès de <strong>Bpifrance</strong> afin d'obtenir une subvention pour l’entraînement d’une intelligence artificielle à haut potentiel. Cette démarche s'inscrit dans notre plan de recherche et développement visant à créer des modèles avancés pour l'analyse des marchés financiers.</p>
-    <p>Le soutien financier de Bpifrance nous permettra d’acquérir des ressources de calcul, d'accéder à des ensembles de données diversifiés et de recruter des talents essentiels à la réussite du projet. Nous sommes convaincus que cette initiative contribuera à accélérer le développement de notre IA et à renforcer notre compétitivité.</p>
-    <p>Nous tenons à remercier nos partenaires et mentors pour leur accompagnement tout au long de ce processus de candidature. Nous restons à l'écoute de l'actualité des dispositifs publics de financement pour soutenir l'innovation et nous informerons nos lecteurs de l’issue de notre demande dès que la décision sera rendue.</p>
-  </div>
-  <footer>
+
+  <!-- Hero Section -->
+  <section class="bg-neutral-50 border-b border-neutral-200 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bpifrance_logo.svg/640px-Bpifrance_logo.svg.png" alt="Logo Bpifrance" class="mx-auto mb-6 w-48 h-auto object-contain">
+      <h1 class="text-4xl md:text-5xl font-semibold text-gray-900">Subvention Bpifrance</h1>
+      <p class="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">Notre dépôt de dossier auprès de Bpifrance</p>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <main class="py-16">
+    <div class="max-w-3xl mx-auto px-6 space-y-6">
+      <p class="text-lg">Hilmar Corp a récemment déposé un dossier auprès de <strong>Bpifrance</strong> afin d’obtenir une subvention pour l’entraînement d’une intelligence artificielle à haut potentiel. Cette démarche s’inscrit dans notre plan de recherche et développement visant à créer des modèles avancés pour l’analyse des marchés financiers.</p>
+      <p class="text-lg">Le soutien financier de Bpifrance nous permettra d’acquérir des ressources de calcul, d’accéder à des ensembles de données diversifiés et de recruter des talents essentiels à la réussite du projet. Nous sommes convaincus que cette initiative contribuera à accélérer le développement de notre IA et à renforcer notre compétitivité.</p>
+      <p class="text-lg">Nous tenons à remercier nos partenaires et mentors pour leur accompagnement tout au long de ce processus de candidature. Nous restons à l’écoute de l’actualité des dispositifs publics de financement pour soutenir l’innovation et nous informerons nos lecteurs de l’issue de notre demande dès que la décision sera rendue.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-8">
     © 2025 Hilmar Corp. Tous droits réservés.
   </footer>
 </body>
