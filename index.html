@@ -21,14 +21,14 @@
         <img src="IMG_3983.jpg" alt="Logo HilmarCorp" class="h-9 w-9 object-contain" />
         <span class="font-semibold tracking-tight">HilmarCorp</span>
       </div>
-      <!-- Navigation principale -->
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#ambition" class="hover:text-blue-300 transition">Ambition</a>
-        <a href="#approche" class="hover:text-blue-300 transition">Méthodologie</a>
-        <a href="#conformite" class="hover:text-blue-300 transition">Responsabilité</a>
-        <a href="#insights" class="hover:text-blue-300 transition">Insights</a>
-        <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
-      </nav>
+<!-- Navigation principale -->
+<nav class="hidden md:flex items-center gap-8 text-sm">
+  <a href="#ambition"   class="hover:text-blue-300 transition">Ambition</a>
+  <a href="#approche"   class="hover:text-blue-300 transition">Méthodologie</a>
+  <a href="#conformite" class="hover:text-blue-300 transition">Responsabilité</a>
+  <a href="#insights"   class="hover:text-blue-300 transition">Insights</a>
+  <a href="#contact"    class="hover:text-blue-300 transition">Contact</a>
+</nav>
       <!-- Sélecteur de langue -->
       <div class="flex items-center gap-2">
         <span class="border border-white rounded-xl px-3 py-1">FR</span>
@@ -64,18 +64,42 @@
   </section>
 
   <!-- Insights HilmarCorp -->
-  <section id="insights" class="scroll-mt-28 md:scroll-mt-32 border-t border-neutral-200 bg-neutral-50/60 py-20">
-    <div class="mx-auto max-w-7xl px-6">
-      <h2 class="text-3xl font-semibold text-blue-900 dark:text-blue-200 tracking-tight">
-        Insights
-      </h2>
-      <p class="mt-4 text-neutral-600 dark:text-neutral-400 max-w-2xl">
-        Nos dernières actualités, projets et analyses sur l’IA, la gestion multi-actifs
-        et l’univers HilmarCorp.
-      </p>
-      <!-- Ici vous pouvez lister les cartes/articles -->
+<section id="insights"
+  class="scroll-mt-28 md:scroll-mt-32 border-t border-neutral-200 bg-neutral-50/60 py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <!-- On force la couleur en inline au cas où un style hérité la grise -->
+    <h2 class="text-3xl font-semibold tracking-tight text-blue-900"
+        style="color:#1e3a8a;">
+      Insights
+    </h2>
+    <p class="mt-4 text-neutral-600 max-w-2xl">
+      Nos dernières actualités, projets et analyses sur l’IA, la gestion multi-actifs
+      et l’univers HilmarCorp.
+    </p>
+
+    <!-- Exemple de carte (tu peux en ajouter d’autres identiques) -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="bpi.html" class="block group">
+        <div class="h-full p-6 border border-neutral-200 rounded-xl bg-white shadow
+                    hover:shadow-lg hover:border-blue-900 transition">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Bpifrance_logo.svg"
+            alt="Logo Bpifrance"
+            class="rounded-2xl aspect-video w-full object-contain mb-4" />
+          <h3 class="text-lg font-medium" style="color:#1e3a8a;">Bpifrance</h3>
+          <p class="mt-2 text-neutral-600">
+            Notre demande de subvention auprès de Bpifrance : objectifs, usages et
+            impact attendu sur l’industrialisation de nos modèles.
+          </p>
+          <span class="mt-1 inline-flex items-center text-blue-600 group-hover:underline">
+            Lire l’article →
+          </span>
+        </div>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Ambition -->
   <section id="ambition" class="border-t border-neutral-200 py-16">
