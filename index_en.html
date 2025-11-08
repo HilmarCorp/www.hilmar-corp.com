@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Concise description of the lab's mission -->
   <meta name="description" content="HilmarCorp: a research and development laboratory aiming to design the first asset management fully powered by artificial intelligence, through a multi-asset approach." />
-  <title>HilmarCorp | AI-driven asset manager </title>
+  <title>HilmarCorp | AI-driven asset manager</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Favicons -->
@@ -13,47 +13,74 @@
   <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
 </head>
 <body class="min-h-screen bg-white text-neutral-900">
-  <!-- Header -->
-<header class="bg-[#1F3E87] text-white">
-  <div class="max-w-6xl mx-auto px-4 py-3 relative flex items-center justify-between">
-    <a href="index_en.html" class="flex items-center gap-3">
-      <div class="h-8">
-        <img src="IMG_3983.jpg" alt="Logo HilmarCorp" class="h-8 w-auto object-contain" />
+
+  <!-- Header responsive -->
+  <header class="bg-[#1F3E87] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 relative flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index_en.html" class="flex items-center gap-3">
+        <div class="h-8">
+          <img src="IMG_3983.jpg" alt="HilmarCorp logo" class="h-8 w-auto object-contain" />
+        </div>
+        <span class="font-semibold text-lg">HilmarCorp</span>
+      </a>
+
+      <!-- Desktop nav (centered) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm absolute left-1/2 -translate-x-1/2">
+        <a href="index_en.html" class="inline-block px-2 py-1 hover:text-blue-200 font-semibold">Home</a>
+        <a href="#approach" class="inline-block px-2 py-1 hover:text-blue-200">Approach</a>
+        <a href="#responsibility" class="inline-block px-2 py-1 hover:text-blue-200">Compliance</a>
+        <a href="rd_public_en.html" class="inline-block px-2 py-1 hover:text-blue-200">Research</a>
+        <a href="#contact" class="inline-block px-2 py-1 hover:text-blue-200">Contact</a>
+      </nav>
+
+      <!-- Desktop languages -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="index.html" class="rounded-xl border border-white/70 px-3 py-1 hover:bg-white/10">FR</a>
+        <span class="rounded-xl border border-white/80 px-3 py-1">EN</span>
       </div>
-      <span class="font-semibold text-lg">HilmarCorp</span>
-    </a>
 
-    <nav class="hidden md:flex items-center gap-8 text-sm absolute left-1/2 -translate-x-1/2">
-      <a href="index_en.html" class="inline-block px-2 py-1 hover:text-blue-200 font-semibold">Home</a>
-      <a href="#approach" class="inline-block px-2 py-1 hover:text-blue-200">Approach</a>
-      <a href="#responsibility" class="inline-block px-2 py-1 hover:text-blue-200">Compliance</a>
-      <a href="rd_public_en.html" class="inline-block px-2 py-1 hover:text-blue-200">Research</a>
-      <a href="#contact" class="inline-block px-2 py-1 hover:text-blue-200">Contact</a>
-    </nav>
-
-    <div class="hidden md:flex items-center gap-3">
-      <a href="index.html" class="rounded-xl border border-white/70 px-3 py-1 hover:bg-white/10">FR</a>
-      <span class="rounded-xl border border-white/80 px-3 py-1">EN</span>
+      <!-- Mobile menu button -->
+      <button id="mobileMenuButton"
+              class="md:hidden inline-flex items-center gap-2 rounded-xl border border-white/70 px-3 py-1"
+              aria-controls="mobileMenu" aria-expanded="false">
+        Menu
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
-  </div>
-</header>
 
-
-
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/20 bg-[#1F3E87]">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="index_en.html" class="py-2 hover:text-blue-200">Home</a>
+        <a href="#approach" class="py-2 hover:text-blue-200">Approach</a>
+        <a href="#responsibility" class="py-2 hover:text-blue-200">Compliance</a>
+        <a href="rd_public_en.html" class="py-2 hover:text-blue-200">Research</a>
+        <a href="#contact" class="py-2 hover:text-blue-200">Contact</a>
+        <div class="mt-2 flex items-center gap-3 pt-2 border-t border-white/20">
+          <a href="index.html" class="rounded-xl border border-white/70 px-3 py-1 hover:bg-white/10">FR</a>
+          <span class="rounded-xl border border-white/80 px-3 py-1">EN</span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero -->
   <section class="relative pt-20 pb-16 bg-white">
     <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7">
         <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-blue-900">
-          Towards an AI solution dedicated to digital asset management 
+          Towards an AI solution dedicated to digital asset management
         </h1>
-                    <p class="mt-5 text-neutral-600 max-w-2xl">
-                Our solution in development: an artificial intelligence dedicated to digital asset management for institutional and sophisticated investors.
-            </p>
+        <p class="mt-5 text-neutral-600 max-w-2xl">
+          Our solution in development: an artificial intelligence dedicated to digital asset management for institutional and sophisticated investors.
+        </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="#contact" class="rounded-2xl bg-blue-900 text-white px-5 py-3 text-sm hover:bg-blue-800 transition">Contact us</a>
-          <a href="#vision"  class="rounded-2xl border border-blue-900 text-blue-900 px-5 py-3 text-sm hover:bg-blue-900 hover:text-white transition">Discover our vision</a>
+          <a href="#vision" class="rounded-2xl border border-blue-900 text-blue-900 px-5 py-3 text-sm hover:bg-blue-900 hover:text-white transition">Discover our vision</a>
         </div>
         <div class="mt-8 text-xs text-neutral-500 leading-relaxed max-w-xl">
           The information presented is exploratory and does not constitute an offer or investment advice.
@@ -79,24 +106,23 @@
 
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
- <!-- KEDGE Entrepreneurship card -->
-<a href="kedge_en.html" class="block group">
-  <div class="h-full p-6 border border-neutral-200 rounded-xl bg-white shadow hover:shadow-lg hover:border-blue-900 transition">
-    <img src="84eb65e1-f266-4a1b-9f8a-97b2807bf4e3.png"
-         alt="KEDGE Entrepreneurship logo"
-         class="rounded-2xl aspect-video w-full object-contain mb-4" />
-    <h3 class="text-lg font-medium" style="color:#1e3a8a;">KEDGE Entrepreneurship</h3>
-    <p class="mt-2 text-neutral-600">
-      HilmarCorp joins KEDGE Entrepreneurship: discover our partnership and its goals.
-    </p>
-    <span class="mt-1 inline-flex items-center text-blue-600 group-hover:underline">
-      Read more →
-    </span>
-  </div>
-</a>
+        <!-- KEDGE Entrepreneurship card -->
+        <a href="kedge_en.html" class="block group">
+          <div class="h-full p-6 border border-neutral-200 rounded-xl bg-white shadow hover:shadow-lg hover:border-blue-900 transition">
+            <img src="84eb65e1-f266-4a1b-9f8a-97b2807bf4e3.png"
+                alt="KEDGE Entrepreneurship logo"
+                class="rounded-2xl aspect-video w-full object-contain mb-4" />
+            <h3 class="text-lg font-medium" style="color:#1e3a8a;">KEDGE Entrepreneurship</h3>
+            <p class="mt-2 text-neutral-600">
+              HilmarCorp joins KEDGE Entrepreneurship: discover our partnership and its goals.
+            </p>
+            <span class="mt-1 inline-flex items-center text-blue-600 group-hover:underline">
+              Read more →
+            </span>
+          </div>
+        </a>
 
-        
-        <!-- Card: Bpifrance (same as FR) -->
+        <!-- Card: Bpifrance -->
         <a href="bpi_en.html" class="block group">
           <div class="h-full p-6 border border-neutral-200 rounded-xl bg-white shadow hover:shadow-lg hover:border-blue-900 transition">
             <img
@@ -279,5 +305,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- Script: mobile menu toggle -->
+  <script>
+    (function () {
+      const btn = document.getElementById('mobileMenuButton');
+      const menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', () => {
+        const isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    })();
+  </script>
 </body>
 </html>
+
