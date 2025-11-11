@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Notes de recherche et développement publiées par HilmarCorp." />
+  <meta name="description" content="Notes de recherche publiées par HilmarCorp." />
   <title>R&D | HilmarCorp</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -11,7 +11,7 @@
 </head>
 <body class="min-h-screen bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
 
-  <!-- header -->
+  <!-- En-tête -->
   <header class="bg-[#1F3E87] text-white">
     <div class="max-w-6xl mx-auto px-4 py-3 relative flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
@@ -37,46 +37,50 @@
   </header>
 
   <main>
-    <!-- hero -->
+    <!-- Hero institutionnel -->
     <section class="relative pt-20 pb-10 bg-white dark:bg-neutral-900">
       <div class="mx-auto max-w-7xl px-6 text-center">
         <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-blue-900 dark:text-blue-200">
           Notes de recherche publiques
         </h1>
         <p class="mt-5 text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-          Cette page rassemble des travaux de R&D de HilmarCorp rendus publics pour documenter notre démarche scientifique sur les marchés crypto.
-          Les notes suivent un format académique (contexte, données, méthode, résultats, limites).
+          HilmarCorp publie ici une sélection de travaux de recherche réalisés sur les marchés numériques.
+          Ces documents visent à partager le cadre méthodologique retenu et à assurer la transparence de certaines études.
         </p>
       </div>
     </section>
 
-    <!-- IP / traçabilité -->
+    <!-- Encadré propriété intellectuelle (institutionnel) -->
     <section class="max-w-7xl mx-auto px-6 pb-6">
-      <div class="rounded-2xl border border-red-200/60 bg-red-50 dark:bg-red-950/40 dark:border-red-900 px-5 py-4 text-sm leading-relaxed">
-        <p class="font-semibold text-red-900 dark:text-red-100 mb-1">
-          Note sur la propriété intellectuelle et la traçabilité
+      <div class="rounded-2xl border border-blue-100 bg-blue-50/60 dark:bg-neutral-800/40 dark:border-neutral-700 px-5 py-4 text-sm leading-relaxed">
+        <p class="font-semibold text-blue-900 dark:text-blue-100 mb-1">
+          Cadre de publication et propriété intellectuelle
         </p>
-        <p class="text-red-900/90 dark:text-red-50/90">
-          Les contenus (textes, codes, méthodologies, résultats) publiés sur cette page restent la propriété exclusive de
-          <strong>HilmarCorp</strong>. Leur diffusion publique a pour but de rendre visible nos travaux, non
-          d’en autoriser l’usage libre ou commercial. Toute réutilisation doit citer la source complète
-          « HilmarCorp R&amp;D – Note publique » et un lien vers cette page. Un suivi interne de la diffusion est assuré pour
-          garantir la paternité scientifique de nos contributions.
+        <p class="text-blue-950/90 dark:text-neutral-100/80">
+          Les contenus mis à disposition sur cette page (textes, éléments de code, méthodologies, résultats)
+          sont la propriété de <strong>HilmarCorp</strong> et sont publiés dans un cadre de diffusion maîtrisée.
+          Toute réutilisation doit mentionner la source complète : « HilmarCorp R&amp;D – Note publique ».
+        </p>
+        <p class="mt-2 text-blue-950/70 dark:text-neutral-300/70">
+          Certains travaux de recherche à caractère stratégique (notamment sur les modèles émergents et
+          les architectures auto-apprenantes) ne font pas l’objet d’une publication publique et restent réservés.
         </p>
       </div>
     </section>
 
-    <!-- notes list -->
+    <!-- Liste des notes -->
     <section class="border-t border-neutral-200 py-16 dark:border-neutral-700">
       <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-6">
-        <!-- note 1 -->
-        <div class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
+
+        <!-- Note 1 -->
+        <article class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
           <div>
-            <h3 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
+            <h2 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
               Bitcoin &amp; macroéconomie : corrélation ou causalité ?
-            </h3>
+            </h2>
             <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Étude empirique des interactions entre le prix du Bitcoin et certains facteurs macro, avec séparation analyse / interprétation.
+              Analyse empirique des interactions entre le prix du Bitcoin et plusieurs facteurs macro, avec distinction
+              entre observation et interprétation.
             </p>
             <p class="mt-3 text-xs text-neutral-400">HilmarCorp R&amp;D — Série OLD</p>
           </div>
@@ -89,36 +93,36 @@
               Télécharger la note (PDF)
             </a>
           </div>
-        </div>
+        </article>
 
-        <!-- note 2 -->
-        <div class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
+        <!-- Note 2 -->
+        <article class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
           <div>
-            <h3 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
+            <h2 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
               Mémoire du marché : premières expérimentations séquentielles sur Bitcoin
-            </h3>
+            </h2>
             <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Validation expérimentale de la présence d’une dépendance temporelle modérée sur BTC daily (2017–2025)
-              via un LSTM et des baselines non séquentielles. Posé comme jalon avant les travaux émergents.
+              Étude exploratoire visant à détecter l’existence d’une dépendance temporelle sur BTC daily (2017–2025)
+              à l’aide d’un modèle LSTM et de modèles de référence non séquentiels. Note positionnée comme jalon
+              avant les travaux plus avancés.
             </p>
             <p class="mt-3 text-xs text-neutral-400">HilmarCorp R&amp;D — Série OLD</p>
           </div>
           <div class="mt-5">
-            <!-- tu mettras ton PDF quand tu l’auras -->
             <a
               href="#"
-              class="inline-block bg-blue-900/70 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg"
+              class="inline-block bg-blue-900/70 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg cursor-not-allowed"
             >
               Bientôt disponible
             </a>
           </div>
-        </div>
+        </article>
 
-        <!-- tu pourras en ajouter d'autres ici -->
       </div>
     </section>
   </main>
 
+  <!-- Pied de page -->
   <footer class="border-t border-neutral-200 py-6 text-sm text-center dark:border-neutral-700">
     <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row justify-between items-center">
       <p class="text-neutral-600 dark:text-neutral-400">© 2025 HilmarCorp — Tous droits réservés.</p>
@@ -132,3 +136,5 @@
 
 </body>
 </html>
+
+
