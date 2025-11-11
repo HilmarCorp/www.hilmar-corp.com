@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Read our public research and development notes from HilmarCorp." />
+  <meta name="description" content="Research notes published by HilmarCorp." />
   <title>R&D | HilmarCorp</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -14,24 +14,21 @@
   <!-- Header -->
   <header class="bg-[#1F3E87] text-white">
     <div class="max-w-6xl mx-auto px-4 py-3 relative flex items-center justify-between">
-      <!-- Logo -->
       <a href="index_en.html" class="flex items-center gap-3">
         <div class="h-8">
-          <img src="IMG_3983.jpg" alt="HilmarCorp logo" class="h-8 w-auto object-contain" />
+          <img src="IMG_3983.jpg" alt="HilmarCorp Logo" class="h-8 w-auto object-contain" />
         </div>
         <span class="font-semibold text-lg">HilmarCorp</span>
       </a>
 
-      <!-- Centered nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm absolute left-1/2 -translate-x-1/2">
         <a href="index_en.html" class="inline-block px-2 py-1 hover:text-blue-200">Home</a>
         <a href="index_en.html#approach" class="inline-block px-2 py-1 hover:text-blue-200">Approach</a>
-        <a href="index_en.html#responsibility" class="inline-block px-2 py-1 hover:text-blue-200">Compliance</a>
+        <a href="index_en.html#compliance" class="inline-block px-2 py-1 hover:text-blue-200">Compliance</a>
         <a href="rd_public_en.html" class="inline-block px-2 py-1 hover:text-blue-200 font-semibold">Research</a>
         <a href="index_en.html#contact" class="inline-block px-2 py-1 hover:text-blue-200">Contact</a>
       </nav>
 
-      <!-- Language -->
       <div class="hidden md:flex items-center gap-3">
         <a href="rd_public.html" class="rounded-xl border border-white/70 px-3 py-1 hover:bg-white/10">FR</a>
         <span class="rounded-xl border border-white/80 px-3 py-1">EN</span>
@@ -41,35 +38,86 @@
 
   <main>
     <!-- Hero -->
-    <section class="relative pt-20 pb-16 bg-white dark:bg-neutral-900">
+    <section class="relative pt-20 pb-10 bg-white dark:bg-neutral-900">
       <div class="mx-auto max-w-7xl px-6 text-center">
-        <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-blue-900 dark:text-blue-200">Research Notes</h1>
+        <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-blue-900 dark:text-blue-200">
+          Public Research Notes
+        </h1>
         <p class="mt-5 text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-          Find here our public research and development notes released by HilmarCorp.
+          HilmarCorp publishes here a selection of research works conducted on digital asset markets.
+          These documents aim to share the adopted methodological framework and to ensure transparency in selected studies.
+        </p>
+      </div>
+    </section>
+
+    <!-- IP / publication framework -->
+    <section class="max-w-7xl mx-auto px-6 pb-6">
+      <div class="rounded-2xl border border-blue-100 bg-blue-50/60 dark:bg-neutral-800/40 dark:border-neutral-700 px-5 py-4 text-sm leading-relaxed">
+        <p class="font-semibold text-blue-900 dark:text-blue-100 mb-1">
+          Publication Framework and Intellectual Property
+        </p>
+        <p class="text-blue-950/90 dark:text-neutral-100/80">
+          The materials available on this page (texts, code excerpts, methodologies, results)
+          are the intellectual property of <strong>HilmarCorp</strong> and are released within a controlled dissemination framework.
+          Any reuse or citation must include the full reference: “HilmarCorp R&amp;D – Public Note”.
+        </p>
+        <p class="mt-2 text-blue-950/70 dark:text-neutral-300/70">
+          Certain strategic research areas (including emerging architectures and self-learning models)
+          are not publicly disclosed and remain under restricted access.
         </p>
       </div>
     </section>
 
     <!-- Notes list -->
     <section class="border-t border-neutral-200 py-16 dark:border-neutral-700">
-      <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-1 gap-6">
-        <div class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm">
-          <h3 class="font-medium text-blue-900 dark:text-blue-200">Bitcoin & Macroeconomics: Correlation or Causation?</h3>
-          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-  Understanding how macro regimes influence but do not dictate the crypto market.          </p>
-          <div class="mt-4">
+      <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-6">
+
+        <!-- Note 1 -->
+        <article class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <h2 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
+              Bitcoin &amp; Macroeconomics: Correlation or Causation?
+            </h2>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Empirical analysis of interactions between Bitcoin’s price and selected macro factors,
+              distinguishing between observed correlation and interpretative causality.
+            </p>
+            <p class="mt-3 text-xs text-neutral-400">HilmarCorp R&amp;D — OLD Series</p>
+          </div>
+          <div class="mt-5">
             <a
-              href="/HC-RD_01_Bitcoin-Macro_EN.pdf"
-              download="HC-RD_01_Bitcoin-Macro_EN.pdf"
+              href="/HC-RD_01_Bitcoin-Macro.pdf"
+              download="HC-RD_01_Bitcoin-Macro.pdf"
               class="inline-block bg-blue-900 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg"
             >
-              Download the note (PDF)
+              Download Note (PDF)
             </a>
-            <!-- iOS strict download fallback:
-            <a href="/HC-RD_01_Bitcoin-Macro_EN.zip" class="ml-3 underline text-blue-900 dark:text-blue-300">Zip version</a>
-            -->
           </div>
-        </div>
+        </article>
+
+        <!-- Note 2 -->
+        <article class="rounded-3xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <h2 class="font-medium text-blue-900 dark:text-blue-200 text-lg">
+              Market Memory: First Sequential Experiments on Bitcoin
+            </h2>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Exploratory study investigating the presence of temporal dependence in daily BTC data (2017–2025)
+              using an LSTM model and non-sequential baselines. Positioned as an initial milestone
+              before more advanced research on emergent structures.
+            </p>
+            <p class="mt-3 text-xs text-neutral-400">HilmarCorp R&amp;D — OLD Series</p>
+          </div>
+          <div class="mt-5">
+            <a
+              href="#"
+              class="inline-block bg-blue-900/70 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg cursor-not-allowed"
+            >
+              Coming soon
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
@@ -79,10 +127,9 @@
     <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row justify-between items-center">
       <p class="text-neutral-600 dark:text-neutral-400">© 2025 HilmarCorp — All rights reserved.</p>
       <div class="flex gap-4 mt-4 md:mt-0">
-        <!-- Use EN pages if you have them; otherwise these FR pages avoid 404s -->
-        <a href="mentions.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Legal notice</a>
-        <a href="avertissements.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Risk warning</a>
-        <a href="confidentialite_en.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Privacy policy</a>
+        <a href="legal.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Legal Notice</a>
+        <a href="disclaimer.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Risk Disclaimer</a>
+        <a href="privacy.html" class="hover:text-blue-900 dark:hover:text-blue-200 transition">Privacy Policy</a>
       </div>
     </div>
   </footer>
